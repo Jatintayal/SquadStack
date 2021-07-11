@@ -20,7 +20,7 @@ body {
   width: 100% !important;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-top: 50px;
+  margin-top: 30px;
   justify-items: center;
 }
 
@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 }
 
 div.cards_container > div:nth-of-type(even) > div.card_details_container {
