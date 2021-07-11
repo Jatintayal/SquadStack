@@ -1,0 +1,167 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+body {
+  background: #ccc;
+}
+
+.parant_container {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards_container {
+  width: 100% !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.card {
+  width: 270px;
+  text-align: center;
+  height: 423px;
+  border-radius: 5px;
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.cards_container > div:nth-of-type(even) > div.card_details_container {
+  background: #f7f7f7;
+}
+
+.card_details_container {
+  padding: 0 25px;
+}
+
+.plan_name {
+  width: 100%;
+  text-align: center;
+  font: montserrat;
+  color: white;
+}
+
+.per_qualified_leads {
+  padding-bottom: 10px;
+}
+
+.per_qualified_leads_amount {
+  font-size: 40px;
+}
+
+.card_row {
+  border-top: 1px dashed #ccc;
+  padding: 10px;
+}
+
+.card:hover .trial_button {
+  background: #ee5a36;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+.trial_button {
+  border: 2px solid #ef5a36;
+  padding: 10px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.popular {
+  background: #ee5a36;
+  color: white;
+  padding: 10px;
+}
+
+.bar {
+  background: #5a6f90;
+  color: white;
+  padding: 10px;
+}
+
+.msg {
+  font-size: 30px;
+  opacity: 0.8;
+  color: #ccc;
+  height: 300px;
+  padding: 71px 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background-color: #f7f7f7;
+  padding: 15px 40px;
+  border: none;
+  margin-top: 10px;
+}
+
+.selected_tab {
+  background-color: #5a6f90;
+  color: white;
+}
+
+.tabs .tab:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tabs .tab:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tabs .tab:not(:last-child) {
+  border-right: 1px solid #d3d3d3;
+}
+
+.start_trial_form {
+  margin-top: 20px;
+}
+
+.start_trial_form_label {
+  font-weight: 500;
+}
+
+.modal_title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.modal_footer {
+  display: flex;
+  justify-content: flex-start !important;
+  padding-top: 0px !important;
+}
+
+.internet_fallback_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  background-color: #5a6f90;
+  font-size: 30px;
+}
