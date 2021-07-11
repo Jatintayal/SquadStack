@@ -57,7 +57,8 @@ export default function PlanModal(props) {
       </Modal.Header>
       <Modal.Body>
         <div className='plan_selected'>
-          <strong>Plan Selected:</strong> {selectedPlan.planName}
+          <strong>Plan Selected:</strong>{' '}
+          {selectedPlan ? selectedPlan.planName : 'Enterprise'}
         </div>
         <PlanForm formData={formData} setFormData={setFormData} />
       </Modal.Body>
